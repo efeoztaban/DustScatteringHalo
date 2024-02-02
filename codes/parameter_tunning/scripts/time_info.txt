@@ -1,0 +1,115 @@
+Mean-Shift
+****************
+
+-Avg Execution Time of One Iteration
+
+    Data preperation took 2.407681465148926 seconds to run.
+    Clustering took 6.5503623485565186 seconds to run.
+    Data Post-Processing took 12.2211856842041 seconds to run.
+        Shape Error Calculation took 1.0546774864196777 seconds to run.
+        Intensity Error Calculation took 0.11097478866577148 seconds to run.
+        Gaussian Error Calculation took 0.1111903190612793 seconds to run.
+        Spatial Error Calculation took 0.10280871391296387 seconds to run.
+    Error Calculation took 1.3796513080596924 seconds to run.
+
+    Total = 23 second
+
+-Total Iteration Number
+
+12167
+12167 * 5 cloud region * 2 different data = 121670
+
+
+-Example Result
+
+{'bandwidths': [0.1, 0.1, 0.1, 0.1, 0.1], 'alpha': 0.7, 'beta': 0.2, 'method': 'gaussian_kernel', 'velocity_weight': 0.5, 'pixel_value_weight': 0.5, 'xy_weight': 5.0, 'centric_shape_consistency': 215106.07860987372, 'shape_smoothness': 328.40414794790325, 'edge_consistency': 10205.302524696166, 'edge_intensity_error': 0.0, 'intensity_gradient_error': 0.8325093508538953, 'intensity_variance_error': 1.2692647661397598, 'peak_intensity_consistency': 24.589667657037584, 'ge_normalized': 0.45265467361696565, 'ge': 1053603.214588623, 'spatial_spread_error': 19.44548906037494, 'gap_error': 0.892506806169838}
+
+=======================================================================================
+
+GMM
+******************
+
+-Avg Execution Time of One Iteration
+
+
+    Data preperation took 1.6525142192840576 seconds to run.
+    Clustering took 3.2639214992523193 seconds to run.
+    Data Post-Processing took 7.310752868652344 seconds to run.
+        Shape Error Calculation took 1.4809412956237793 seconds to run.
+        Intensity Error Calculation took 0.13692355155944824 seconds to run.
+        Gaussian Error Calculation took 0.23712873458862305 seconds to run.
+        Spatial Error Calculation took 0.047312021255493164 seconds to run.
+    Error Calculation took 1.9102756977081299 seconds to run.
+
+    Total = 14.5 second
+
+-Total Iteration Number
+
+19827 
+19827 * 5 cloud region * 2 different data = 198270
+
+-Example Result
+
+{'weights': [0.05, 0.05, 0.05, 0.2, 0.6499999999999999], 'tol': 0.001, 'alpha': 0.7, 'beta': 0.2, 'centric_shape_consistency': 711091.911397595, 'shape_smoothness': 32.7645260568974, 'edge_consistency': 5810.656440513196, 'edge_intensity_error': 0.04137246019621754, 'intensity_gradient_error': 1.021284508164472, 'intensity_variance_error': 0.628747945931223, 'peak_intensity_consistency': 19.073191195294662, 'ge_normalized': 0.16638341486463948, 'ge': 1536177.6076065958, 'spatial_spread_error': 17.382603780570907, 'gap_error': 0.771235997486167}     
+
+
+================================================================================================
+
+GMM with Dirichlet
+************************
+
+-Avg Execution Time of One Iteration
+
+    Data preperation took 1.5297443866729736 seconds to run.
+    Clustering took 6.103292226791382 seconds to run.
+    Data Post-Processing took 10.309400081634521 seconds to run.
+        Shape Error Calculation took 0.848383903503418 seconds to run.
+        Intensity Error Calculation took 0.09923529624938965 seconds to run.
+        Gaussian Error Calculation took 0.16704916954040527 seconds to run.
+        Spatial Error Calculation took 0.03198647499084473 seconds to run.
+    Error Calculation took 1.1466548442840576 seconds to run.
+
+    Total = 19.3 second
+
+
+-Total Iteration Number
+
+48
+48 * 5 cloud region * 2 different data = 480
+
+-Example Result
+
+{'DP': 0.81, 'alpha': 0.7, 'beta': 0.2, 'centric_shape_consistency': 515086.07978482405, 'shape_smoothness': 30.88897410842975, 'edge_consistency': 1249.7856556323698, 'edge_intensity_error': 0.0056614112043552375, 'intensity_gradient_error': 0.813271117588911, 'intensity_variance_error': 0.6053473593974547, 'peak_intensity_consistency': 23.28873702595202, 'ge_normalized': 0.3280517214375316, 'ge': 1165470.6635631723, 'spatial_spread_error': 15.411977431650659, 'gap_error': 0.8123413366557914}
+
+============================================================
+
+
+
+GMM with Dirichlet with Feature Weighting
+***********************************************
+
+-Avg Execution Time of One Iteration
+
+    Data preperation took 1.8995153903961182 seconds to run.
+    Clustering took 6.138844966888428 seconds to run.
+    Data Post-Processing took 9.931225538253784 seconds to run.
+        Shape Error Calculation took 0.9118812084197998 seconds to run.
+        Intensity Error Calculation took 0.11262130737304688 seconds to run.
+        Gaussian Error Calculation took 0.18744182586669922 seconds to run.
+        Spatial Error Calculation took 0.032399892807006836 seconds to run.
+    Error Calculation took 1.2443442344665527 seconds to run.
+
+    Total = 19.3 second
+
+-Total Iteration Number
+
+170338
+170338 * 5 cloud region * 2 different data = 1703380
+
+-Example Result
+
+{'DP': 0.01, 'alpha': 0.7, 'beta': 0.2, 'velocity_weight': 0.5, 'pixel_value_weight': 0.5, 'xy_weight': 0.5, 'centric_shape_consistency': 624113.8564993016, 'shape_smoothness': 350.0297810264344, 'edge_consistency': 3026.0688384877094, 'edge_intensity_error': 0.0, 'intensity_gradient_error': 0.7577020445071364, 'intensity_variance_error': 0.7693902423826444, 'peak_intensity_consistency': 21.274139713360103, 'ge_normalized': 0.28532893555686273, 'ge': 1416862.340357886, 'spatial_spread_error': 17.313244566811996, 'gap_error': 0.8480440215452448}
+
+
+
+====================
