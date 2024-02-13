@@ -28,7 +28,20 @@ for i in list(list(np.arange(0, 7,0.5))) + list(range(7, 16)):
 # Print parameters_list to verify it has the correct values
 print(parameters_list)
 
+max = len(parameters_list)
+
+print("Total param number: ",max)
+i=0
+
 # Loop through each parameter set and run the script
 for params in parameters_list:
     run_script(*params)
-    print("FINISHED FOR",params)
+    print("FINISHED FOR",params),
+
+    i+=1
+
+    print("============",f"  {i/max*100} % FINISHED   ","============")
+
+        # File writing without lock
+    with open("tracker.txt", 'a') as f:
+        f.write(f"============  {i/max*100} % FINISHED   ============\n")
